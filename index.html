@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo list</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/todolist.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div class="todo-list__app">
+      <div id="containerTop" class="todo-add-item__container">
+        <h1 class="heading" style="color: #fff">Todo list</h1>
+        <p id="total-task">Total:</p>
+        <p id="total-task-completed">Completed:</p>
+        <form action="#" class="todo-add-item" id="todo-add">
+          <input
+            class="inputItem"
+            autocomplete="off"
+            id="item-input"
+            type="text"
+            name="text"
+            placeholder="New task..."
+            maxlength="50"
+          />
+          <input id="add-item" type="submit" value="Add" />
+        </form>
+        <p id="caracteresRestantes"><span></span> Caracteres restantes</p>
+      </div>
+
+      <div class="todo-list__container">
+        <ul id="todo-list"></ul>
+      </div>
+      <p id="devolper">Felipe</p>
+    </div>
+
+    <script src="js/todolist.js"></script>
+  </body>
+</html>
